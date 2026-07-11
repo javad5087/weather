@@ -1,4 +1,5 @@
-baseURL = ""
+baseURL = "https://javad5087.github.io/weather/"
+publishDir = "docs"
 languageCode = "fa-IR"
 title = "آب و هوای کردستان"
 
