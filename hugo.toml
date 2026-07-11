@@ -1,8 +1,7 @@
 baseURL = "https://javad5087.github.io/weather/"
-<<<<<<< HEAD
+
 publishDir = "docs"
-=======
->>>>>>> fb719bc1e53948b5561e2484057f0c5a9fec08e6
+
 languageCode = "fa-IR"
 title = "آب و هوای کردستان"
 
