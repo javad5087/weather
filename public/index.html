@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<meta name="generator" content="Hugo 0.159.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+<meta charset="UTF-8">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>آب و هوای کردستان | آب و هوای کردستان</title>
+
+<meta name="theme-color" content="#1976d2">
+
+<meta name="description" content="پیش بینی آب و هوای شهرهای استان کردستان">
+
+<link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+<header class="header">
+
+<h1>
+
+آب و هوای کردستان
+
+</h1>
+
+<p>
+
+پیش بینی آنلاین شهرهای استان کردستان
+
+</p>
+
+</header>
+
+<div class="weather-card">
+
+<div class="top">
+
+<select id="city">
+
+
+
+<option
+value="36.2499,46.2735">
+
+سقز
+
+</option>
+
+
+
+<option
+value="35.314,46.998">
+
+سنندج
+
+</option>
+
+
+
+<option
+value="35.998,45.885">
+
+بانه
+
+</option>
+
+
+
+<option
+value="35.521,46.176">
+
+مریوان
+
+</option>
+
+
+
+<option
+value="35.866,47.605">
+
+بیجار
+
+</option>
+
+
+
+<option
+value="35.166,47.804">
+
+قروه
+
+</option>
+
+
+
+<option
+value="35.913,47.026">
+
+دیواندره
+
+</option>
+
+
+
+<option
+value="34.795,46.935">
+
+کامیاران
+
+</option>
+
+
+
+</select>
+<button id="locationBtn">
+📍 موقعیت من
+</button>
+</div>
+
+<div class="icon">
+
+<img id="weatherIcon"
+
+src="/icons/sun.svg">
+
+</div>
+
+<div id="temperature">
+
+--°
+
+</div>
+
+<div id="condition">
+
+در حال دریافت...
+
+</div>
+
+<div class="info">
+
+<div class="box">
+
+<img src="/icons/wind.svg">
+
+<span id="wind">
+
+--
+
+</span>
+
+</div>
+
+<div class="box">
+
+<img src="/icons/humidity.svg">
+
+<span id="humidity">
+
+--
+
+</span>
+
+</div>
+
+<div class="box">
+
+🌧
+
+<span id="rain">
+
+--
+
+</span>
+
+</div>
+
+<div class="box">
+
+📍
+
+<span id="cityLabel">
+
+سقز
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>
+
+پیش بینی هفت روز آینده
+
+</h2>
+
+<div id="forecast">
+
+</div>
+<section class="card map-card">
+
+<h2>
+🗺️ نقشه استان کردستان
+</h2>
+
+<div id="map"></div>
+<section class="card">
+
+<h2>
+📈 دمای ۲۴ ساعت آینده
+</h2>
+
+<canvas id="temperatureChart"></canvas>
+
+</section>
+<section class="card sun-card">
+
+    <h2>🌅 خورشید</h2>
+
+    <div class="sun-grid">
+
+        <div class="sun-item">
+
+            <div>🌄 طلوع</div>
+
+            <strong id="sunrise">--:--</strong>
+
+        </div>
+
+        <div class="sun-item">
+
+            <div>🌇 غروب</div>
+
+            <strong id="sunset">--:--</strong>
+
+        </div>
+
+        <div class="sun-item">
+
+            <div>☀️ طول روز</div>
+
+            <strong id="dayLength">--</strong>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/app.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/map.js"></script>
+<script src="js/location.js"></script>
+<script>
+
+if('serviceWorker' in navigator){
+
+navigator.serviceWorker.register('/sw.js');
+
+}
+
+</script>
+</body>
+
+</html>

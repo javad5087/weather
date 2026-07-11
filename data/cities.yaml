@@ -1,0 +1,41 @@
+cities:
+
+- id: saqqez
+  name: سقز
+  lat: 36.2499
+  lon: 46.2735
+
+- id: sanandaj
+  name: سنندج
+  lat: 35.314
+  lon: 46.998
+
+- id: baneh
+  name: بانه
+  lat: 35.998
+  lon: 45.885
+
+- id: marivan
+  name: مریوان
+  lat: 35.521
+  lon: 46.176
+
+- id: bijar
+  name: بیجار
+  lat: 35.866
+  lon: 47.605
+
+- id: qorveh
+  name: قروه
+  lat: 35.166
+  lon: 47.804
+
+- id: divandarreh
+  name: دیواندره
+  lat: 35.913
+  lon: 47.026
+
+- id: kamyaran
+  name: کامیاران
+  lat: 34.795
+  lon: 46.935

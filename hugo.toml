@@ -1,0 +1,12 @@
+baseURL = ""
+languageCode = "fa-IR"
+title = "آب و هوای کردستان"
+
+disableKinds = ["taxonomy","term"]
+
+[params]
+author = "Javad Sajjadi"
+description = "پیش بینی آب و هوای شهرهای استان کردستان"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
